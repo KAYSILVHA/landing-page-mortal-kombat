@@ -84,3 +84,27 @@ div.line {
     z-index: 2;
     margin: 20px 0;
 }
+
+.characters {
+    height: auto;
+    padding: 5rem 0;
+}
+
+.characters h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-characters {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.character-div {
+    border: 2px solid #fff;
+    width: 15rem;
+    height: 20rem;
+}
