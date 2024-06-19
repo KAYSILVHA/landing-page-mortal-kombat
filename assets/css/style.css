@@ -28,12 +28,12 @@ main {
 }
 
 header {
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.356);
     top: 0;
-    z-index: 2;
+    z-index: 1000;
 }
 
 header img {
@@ -74,7 +74,8 @@ header img {
 }
 
 .nav-item a:hover {
-    color: rgba(160, 3, 199, 0.699);
+    color: rgb(160, 3, 199);
+    box-shadow: rgba(160, 3, 199, 0.459) 2px 2px 20px 10px, rgba(225, 0, 255, 0.829) 0px 8px 16px -8px;
 }
 
 div.line {
@@ -92,7 +93,11 @@ div.line {
 
 .characters h2 {
     font-size: 2rem;
+}
+
+.characters p {
     margin-bottom: 2rem;
+    color: rgb(129, 129, 129);
 }
 
 .container-characters {
@@ -104,7 +109,58 @@ div.line {
 }
 
 .character-div {
-    border: 2px solid #fff;
+    border: 2px solid rgba(160, 3, 199, 0.699);
     width: 15rem;
     height: 20rem;
+}
+
+.character-div:hover {
+    box-shadow: rgba(160, 3, 199, 0.459) 2px 2px 20px 10px, rgba(225, 0, 255, 0.829) 0px 8px 16px -8px;
+}
+
+.kitana {
+    background-image: url("../images/kitana.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.kratos {
+    background-image: url("../images/kratos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+}
+
+.kung-lao {
+    background-image: url("../images/kung-lao.jpg");
+    background-position: 20%;
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+}
+
+.sindel {
+    background-image: url("../images/sindel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 180% 100%;
+}
+
+.scorpion {
+    background-image: url("../images/scorpion.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+}
+
+.sub-zero {
+    background-image: url("../images/sub-zero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+#characterImage{
+    max-height: 500px;
 }

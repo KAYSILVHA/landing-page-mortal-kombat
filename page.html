@@ -57,19 +57,25 @@
         <section class="container-fluid characters">
             <div class="container">
                 <h2 class="text-light">Personagens</h2>
-                <div class="container-characters">
-                    <div class="character-div"></div>
-                    <div class="character-div"></div>
-                    <div class="character-div"></div>
-                    <div class="character-div"></div>
-                    <div class="character-div"></div>
-                    <div class="character-div"></div>
+                <p>Alguns Personagens do game</p>
+                <div class="container d-flex">
+                    <div class="container-characters">
+                        <div class="character-div kitana" id="kitana" onmouseenter="showImageKitana()"></div>
+                        <div class="character-div kratos" id="kratos" onmouseenter="showImageKratos()"></div>
+                        <div class="character-div kung-lao" id="kungLao" onmouseenter="showImageKungLao()"></div>
+                        <div class="character-div sindel" id="sindel" onmouseenter="showImageSindel()"></div>
+                        <div class="character-div scorpion" id="scorpion" onmouseenter="showImageScorpion()"></div>
+                        <div class="character-div sub-zero" id="subZero" onmouseenter="showImageSubZero()"></div>
+                    </div>
+                    <div>
+                        <img src="" alt="Personagem Imagem" id="characterImage">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer></footer>
-    <script type="module" src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
