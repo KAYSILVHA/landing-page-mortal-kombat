@@ -189,6 +189,10 @@ div.line {
     z-index: 1;
 }
 
+.about div{
+    z-index: 200;
+}
+
 .contacts {
     position: relative;
     height: 90vh;
