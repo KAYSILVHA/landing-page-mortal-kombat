@@ -37,6 +37,11 @@ header {
     background-color: rgba(0, 0, 0, 0.356);
     top: 0;
     z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 1);
 }
 
 header img {
@@ -94,6 +99,10 @@ div.line {
     padding: 5rem 0;
 }
 
+.image-initial {
+    width: 450px;
+}
+
 .characters h2 {
     font-size: 2rem;
 }
@@ -104,7 +113,7 @@ div.line {
 }
 
 .container-characters {
-    width: 70%;
+    max-width: 60%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -113,8 +122,8 @@ div.line {
 
 .character-div {
     border: 2px solid rgba(160, 3, 199, 0.699);
-    width: 15rem;
-    height: 20rem;
+    width: 12rem;
+    height: 18rem;
 }
 
 .character-div:hover {
@@ -175,6 +184,39 @@ div.line {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    color: white;
+    padding: 30px 0;
+}
+
+.about h2 {
+    font-size: 5rem;
+    width: 90%;
+    text-align: left;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text p {
+    text-align: justify;
+    color: rgb(129, 129, 129);
+}
+
+.about .line {
+    width: 40rem;
+}
+
+.about img {
+    width: 35rem;
+}
+
+.about button {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-weight: 500;
+    border: 0;
+    padding: 10px 30px;
 }
 
 .about::before {
@@ -191,6 +233,49 @@ div.line {
 
 .about div {
     z-index: 200;
+}
+
+.characteristics {
+    position: relative;
+    color: white;
+    padding: 30px 0;
+    height: 90vh;
+    background-image: url('../images/background-scorpio-2.jpg');
+    background-position: -100px;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    overflow: hidden;
+}
+
+.characteristics::before {
+    filter: blur(5px);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+strong {
+    color: rgba(215, 56, 255, 0.699);
+}
+
+.tex-characteristics {
+    width: 50%;
+}
+
+.tex-characteristics p, ul {
+    color: rgb(129, 129, 129);
+    text-align: justify;
+}
+
+.characteristics h2 {
+    font-size: 5rem;
+    text-align: left;
 }
 
 .contacts {
@@ -212,6 +297,22 @@ div.line {
     background-color: black;
     opacity: 0.2;
     z-index: 1;
+}
+
+.form{
+    color: white;
+    width: 50%;
+    z-index: 2000;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+}
+
+footer .footer-text a{
+    color: rgba(215, 56, 255, 0.699);
 }
 
 @media screen and (max-width: 991px) {

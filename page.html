@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/mortal-kombat-x-new-dragon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 
 <body>
@@ -30,10 +31,13 @@
                         <a class="nav-link" href="#">Sobre</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Características</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Personagens</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contatos</a>
+                        <a class="nav-link" href="#">Junte-se</a>
                     </li>
                 </ul>
             </div>
@@ -54,20 +58,72 @@
                 <p>É PROIBIDO REIVINDICAR VITÓRIA ATÉ QUE O TORNEIO COMECE.</p>
             </div>
         </section>
+
         <section class="container-fluid about d-flex flex-column justify-content-center align-items-center">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="about-text">
-                    <h2>Sobre o Game</h2>
+                    <h2>Sobre Mortal Kombat</h2>
+                    <div class="line"></div>
+                    <p>Mortal Kombat é uma icônica franquia de jogos de luta criada por Ed Boon e John Tobias. Lançada
+                        pela primeira vez em 1992, a série se destacou por seus gráficos realistas, personagens únicos
+                        e, principalmente, pelo seu alto nível de violência, incluindo os famosos "Fatalities". Ao longo
+                        dos anos, Mortal Kombat evoluiu, incorporando novas mecânicas de jogo, expandindo seu enredo e
+                        adaptando-se a diversas plataformas, desde arcades até consoles modernos. Além dos jogos, Mortal
+                        Kombat também gerou filmes, séries de TV, quadrinhos e outros produtos, consolidando-se como um
+                        dos maiores nomes da cultura pop dos videogames.</p>
+                    <button>Ir ao combate</button>
                 </div>
                 <img src="./assets/images/mortal-kombat-x-new-dragon-logo.png" alt="Logo">
             </div>
         </section>
+        <section class="container-fluid characteristics">
+            <div class="container d-flex align-items-end justify-content-end">
+                <div class="tex-characteristics text-align-start">
+                    <h2>Características</h2>
+                    <div class="line"></div>
+                    <p>
+                        Mortal Kombat se destaca por suas características marcantes que o tornaram um dos jogos de luta
+                        mais icônicos de todos os tempos:
+                    </p>
+                    <ul>
+                        <li><strong>Violência e Fatalities:</strong> Conhecido por seus altos níveis de violência e os
+                            famosos
+                            "Fatalities",
+                            movimentos finais brutais que definem a série.</li>
+                        <li><strong>Personagens Únicos:</strong> Um elenco diversificado de lutadores, cada um com sua
+                            própria história,
+                            habilidades e estilos de luta distintos.</li>
+                        <li><strong>História Profunda:</strong> Uma narrativa envolvente que abrange mundos e realidades
+                            diferentes,
+                            envolvendo torneios épicos entre o Reino da Terra e o Exoterra.</li>
+                        <li><strong>Jogabilidade Competitiva:</strong> Combinações complexas de golpes e uma mecânica de
+                            jogo que
+                            recompensa
+                            a habilidade e a estratégia.</li>
+                        <li><strong>Gráficos Realistas:</strong> Evolução constante dos gráficos, desde os sprites
+                            digitalizados dos
+                            primeiros jogos até as animações detalhadas dos títulos mais recentes.</li>
+                        <li><strong>Multiplataforma</strong>: Disponível em diversas plataformas, desde arcades
+                            clássicos até os
+                            consoles e
+                            PCs modernos.</li>
+                        <li><strong>Expansão Multimídia:</strong> Além dos jogos, a franquia inclui filmes, séries de
+                            TV, quadrinhos e
+                            outros
+                            produtos derivados.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section class="container-fluid characters">
             <div class="container">
                 <h2 class="text-light">Personagens</h2>
                 <p>Alguns Personagens do Game</p>
-                <div class="container d-flex flex-lg-row flex-column-reverse align-items-lg-start justify-content-lg-start align-items-center justify-content-center">
-                    <div class="container-characters align-items-lg-start justify-content-lg-start align-items-center justify-content-center">
+                <div
+                    class="container d-flex flex-lg-row flex-column-reverse justify-content-lg-start align-items-center justify-content-center">
+                    <div
+                        class="container-characters align-items-lg-start justify-content-lg-start align-items-center justify-content-center">
                         <div class="character-div kitana" id="kitana" onmouseenter="showImageKitana()"></div>
                         <div class="character-div kratos" id="kratos" onmouseenter="showImageKratos()"></div>
                         <div class="character-div kung-lao" id="kungLao" onmouseenter="showImageKungLao()"></div>
@@ -76,16 +132,130 @@
                         <div class="character-div sub-zero" id="subZero" onmouseenter="showImageSubZero()"></div>
                     </div>
                     <div>
-                        <img src="" alt="Personagem Imagem" id="characterImage">
+                        <img src="./assets/images/mortal-kombat-xl.jpg" alt="Personagem Imagem" id="characterImage"
+                            class="image-initial">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container-fluid contacts">
 
+        <section class="container-fluid contacts">
+            <div class="container d-flex align-items-end justify-content-end">
+                <div class="form">
+                    <h2>Junte-se a nós!</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="exemplo@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="text" class="form-label">Mensagem</label>
+                            <textarea type="textarea" class="form-control" id="text"
+                                placeholder="Digite sua mensagem..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="text-center text-lg-start text-muted">
+        <div class="container p-4 pb-0">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-white">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Se conecte e se una a nós nessa jornada</span>
+                </div>
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3 text-white">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-text text-center p-3 text-white">
+                © 2024 Copyright:
+                <a class="" href="https://github.com/KAYSILVHA" target="_blank">KaySilvha</a>
+            </div>
+
+        </div>
+    </footer>
     <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
