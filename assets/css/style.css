@@ -189,7 +189,7 @@ div.line {
     z-index: 1;
 }
 
-.about div{
+.about div {
     z-index: 200;
 }
 
@@ -212,4 +212,17 @@ div.line {
     background-color: black;
     opacity: 0.2;
     z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+    .character-div {
+        border: 2px solid rgba(160, 3, 199, 0.699);
+        width: 8rem;
+        height: 10rem;
+    }
+
+    #characterImage {
+        max-height: 300px;
+        margin-bottom: 20px;
+    }
 }
