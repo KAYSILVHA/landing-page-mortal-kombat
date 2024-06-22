@@ -305,6 +305,14 @@ strong {
     z-index: 2000;
 }
 
+form button {
+    color: white;
+    background-color: rgb(215, 56, 255);
+    border: 0;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+
 footer{
     background-color: black;
     color: white;
