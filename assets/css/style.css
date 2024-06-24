@@ -9,6 +9,24 @@ main {
     gap: 30px;
 }
 
+header {
+    padding: 10px 0;
+    position: fixed;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.356);
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+header img {
+    width: 5rem;
+}
+
 .banner {
     position: relative;
     height: 100vh;
@@ -28,24 +46,6 @@ main {
     background-color: black;
     opacity: 0.7;
     z-index: 1;
-}
-
-header {
-    padding: 10px 0;
-    position: fixed;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.356);
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s;
-}
-
-header.scrolled {
-    background-color: rgba(0, 0, 0, 1);
-}
-
-header img {
-    width: 5rem;
 }
 
 .title-container {
@@ -264,11 +264,12 @@ strong {
     color: rgba(215, 56, 255, 0.699);
 }
 
-.tex-characteristics {
+.text-characteristics {
     width: 50%;
 }
 
-.tex-characteristics p, ul {
+.text-characteristics p,
+ul {
     color: rgb(129, 129, 129);
     text-align: justify;
 }
@@ -299,10 +300,25 @@ strong {
     z-index: 1;
 }
 
-.form{
+.form {
     color: white;
     width: 50%;
-    z-index: 2000;
+    z-index: 20;
+}
+
+form .form-control {
+    background: #000;
+    border: 1px solid rgba(215, 56, 255, 0.699);
+    color: white;
+}
+
+form .form-control::placeholder {
+    color: white;
+}
+
+form .form-control:focus {
+    background: #000;
+    color: white;
 }
 
 form button {
@@ -313,17 +329,116 @@ form button {
     font-weight: 600;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     padding: 50px 0;
 }
 
-footer .footer-text a{
+footer .footer-text a {
     color: rgba(215, 56, 255, 0.699);
 }
 
 @media screen and (max-width: 991px) {
+    header {
+        display: none;
+    }
+
+    .banner {
+        position: relative;
+        height: 80vh;
+        background-image: url('../images/scropion-bg-4.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .banner h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .title-container h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .title img {
+        width: 4rem;
+    }
+
+    .title {
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .about {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 80vw;
+        text-align: center;
+    }
+
+
+    .about .line {
+        width: 80vw;
+    }
+
+    .about img {
+        width: 10rem;
+    }
+
+    .about button {
+        background-color: rgb(48, 48, 48);
+        color: white;
+        font-weight: 500;
+        border: 0;
+        padding: 10px 30px;
+    }
+
+    .characteristics {
+        height: auto;
+        padding: 20px;
+        background-color: black;
+        background-image: none;
+    }
+
+    .characteristics::before {
+        width: 0;
+        height: 0;
+    }
+
+    .text-characteristics {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .characteristics .line {
+        width: 80vw;
+    }
+
+    .characteristics h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sub-container {
+        width: 80vw;
+    }
+
     .character-div {
         border: 2px solid rgba(160, 3, 199, 0.699);
         width: 8rem;
@@ -333,5 +448,14 @@ footer .footer-text a{
     #characterImage {
         max-height: 300px;
         margin-bottom: 20px;
+    }
+
+    .contacts {
+        height: 50vh;
+        padding: 50px 0;
+    }
+
+    .form {
+        width: 80vw;
     }
 }
