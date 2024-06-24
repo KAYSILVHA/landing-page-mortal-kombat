@@ -118,7 +118,7 @@
         </section>
 
         <section class="container-fluid characters jalign-items-center justify-content-center">
-            <div class="container text-lg-start text-center sub-container">
+            <div class="container-lg container-fluid text-lg-start text-center sub-container">
                 <h2 class="text-light">Personagens</h2>
                 <p>Alguns Personagens do Game</p>
                 <div
@@ -132,15 +132,17 @@
                         <div class="character-div scorpion" id="scorpion" onmouseenter="showImageScorpion()"></div>
                         <div class="character-div sub-zero" id="subZero" onmouseenter="showImageSubZero()"></div>
                     </div>
-                    <div>
+                    <div class="character-selected d-flex flex-column justify-content-center align-items-center">
                         <img src="./assets/images/mortal-kombat-xl.jpg" alt="Personagem Imagem" id="characterImage"
                             class="image-initial">
+                            <div class="line"></div>
+                            <h3 id="character-name">Escolha seu Guerreiro!</h3>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid contacts">
+        <section class="container-fluid contacts d-flex align-items-center justify-content-center">
             <div class="container d-flex align-items-lg-end justify-content-lg-end align-items-center justify-content-center">
                 <div class="form text-lg-start text-center">
                     <h2>Junte-se a nós!</h2>
